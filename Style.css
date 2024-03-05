@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* borders only */
+body {
+    border: 3px solid red;
+}
+
+Main {
+    /* border: 2px solid green; */
+}
+
+section {
+    /* border: 1px solid brown; */
+}
+
+/* start styling */
+
+body {
+    padding: 80px 20px; 
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* is flex necessary? */
+}
+.outer-container {
+    border-radius: 20px;
+    /* border: 5px solid black; */
+    background-color: white;
+    box-shadow: 0px 12px 10px 2px hsl(225, 100%, 90%);
+}
+header {
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* slight white space at bottom, coz when width 100%, bottom isn;t filled, can be fixed */
+}
+h1, p, button, a, .annual-plan-container p {
+    font-family: "Red Hat Display", sans-serif;
+    /* color: green; */
+}
+p {
+    font-size: 1rem;
+    /* 16px instructions */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.order-summary {
+    text-align: center;
+    padding: 10px 20px;
+}
+.order-summary h1 {
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.order-summary p {
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+.music-icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(225, 100%, 97%);
+    border-radius: 10px;
+}
+.music-icon-container div {
+    /* border: 1px solid black; */
+}
+.music-icon-container h1 {
+    font-weight: 900;
+    font-size: 1rem;
+}
+.music-icon-subcontainer {
+    display: flex;
+    gap: 20px;
+}
+.music-icon-container a {
+    font-weight: 700;
+    font-size: 14px;
+}
+.annual-plan-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5rem;
+}
+.annual-plan-container p {
+    font-weight: 500;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    font-weight: 900px;
+    box-shadow: 0px 12px 10px 2px hsl(225, 100%, 90%);
+}
+
+.cancel-btn {
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 900px;
+    /* font weight isn't working, but everything else is  */
+    margin-top: 0px;
+}
+
+@media (min-width: 490px) {
+    body {
+        align-items: center;
+    }
+    .outer-container {
+        max-width: 450px;
+    }
+}
+
+
